@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Decidi per me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>🤔 Decidi per me</h1>
+
+    <select id="modalita">
+      <option value="random">🎲 Sorteggio</option>
+      <option value="ruota">🎡 Ruota</option>
+    </select>
+
+    <div id="inputs">
+      <input type="text" placeholder="Scelta">
+      <input type="text" placeholder="Scelta">
+    </div>
+
+    <button onclick="aggiungiScelta()">➕ Aggiungi scelta</button>
+    <button class="main" onclick="decidi()">Decidi!</button>
+
+    <!-- RUOTA -->
+    <div id="wheelBox" class="wheel-container" style="display:none;">
+      <div class="pointer">☚</div>
+      <canvas id="ruota" width="300" height="300"></canvas>
+    </div>
+
+    <p id="risultato">Pronto a decidere 😎</p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
